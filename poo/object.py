@@ -5,7 +5,7 @@ class People:
   def hi(self ):
       print("Hola " + self.name)
   
-hector = People(30)
+hector = People("Juan")
 
 hector.hi()
 

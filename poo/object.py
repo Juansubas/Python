@@ -1,11 +1,25 @@
 class People:
-  def __init__(self, name: str):
-      self.name = name
+    classname = 'Juansubas'
     
-  def hi(self ):
-      print("Hola " + self.name)
+    def __init__(self, name: str):
+        self.name = name
+        
+    def hi(self ):
+        print("Hola " + self.name)
+        
+    @staticmethod
+    def helloworld():
+        print("Hello World")
+    
+    @classmethod
+    def helloworld2(cls):
+        print("Hola mundo2")
+    
   
-hector = People("Juan")
+juan = People("Juan")
 
-hector.hi()
+juan.hi()
 
+juan.helloworld()
+
+People.helloworld2()

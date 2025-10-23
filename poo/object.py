@@ -6,10 +6,13 @@ class People:
         self.__age = age
         
     def hi(self ):
-        print("Hola " + self.name)
+        print("Hi " + self.name)
         
     def get_age(self):
-        return self.__Age
+        return self.__age
+    
+    def __some(self):
+        print("Some")
         
     @staticmethod
     def helloworld():
@@ -17,7 +20,7 @@ class People:
     
     @classmethod
     def helloworld2(cls):
-        print("Hola mundo2")
+        print("Hello World2")
     
   
 juan = People("Juan", 20)
@@ -29,3 +32,15 @@ juan.helloworld()
 People.helloworld2()
 
 print(juan.get_age())
+
+# Method Private not works juan.__some
+
+#Same constructor using pass
+class Barman(People):
+    pass
+
+    def welcome(self):
+        print("Welcome")
+
+juan = Barman("Juan", 20)
+juan.welcome()

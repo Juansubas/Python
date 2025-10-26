@@ -42,5 +42,18 @@ class Barman(People):
     def welcome(self):
         print("Welcome")
 
+class Student(People):
+    def __init__(self, name, age, profession):
+        super().__init__(name, age)
+        self.profession = profession
+    
+    def hi(self):
+        print("Hola soy " + self.name + " y soy un " + self.profession)
+
 juan = Barman("Juan", 20)
 juan.welcome()
+juan.hi()
+juan.helloworld()
+
+juanStudent = Student("Juan", 25, "engineer")
+juanStudent.hi()

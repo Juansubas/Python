@@ -49,6 +49,9 @@ class Student(People):
     
     def hi(self):
         print("Hola soy " + self.name + " y soy un " + self.profession)
+        
+def show(people):
+    people.hi()
 
 juan = Barman("Juan", 20)
 juan.welcome()
@@ -57,3 +60,5 @@ juan.helloworld()
 
 juanStudent = Student("Juan", 25, "engineer")
 juanStudent.hi()
+
+andres = People("andres", 30)

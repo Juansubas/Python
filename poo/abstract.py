@@ -5,6 +5,9 @@ class Drink(ABC):
     def get_quantity():
       pass
     
+    def descrption(self):
+        print("Soy una bebida")
+    
     
 class Beer(Drink):
     def __init__(self, quantity):
@@ -15,3 +18,4 @@ class Beer(Drink):
         
 beer = Beer(15)
 print(beer.get_quantity())
+beer.descrption()
